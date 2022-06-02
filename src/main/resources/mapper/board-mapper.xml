@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nowon.shs.mapper.BoardMapper">
+<!-- namespace는 @Mapper interface 경로와 일치해야합니다. -->
+
+	<!-- 메서드이름이 id와 일치하도록 정의해주세요 -->
+	<select id="findAllDesc" resultType="com.nowon.shs.domain.dto.BoardDto">
+		select * from board order by no desc
+	</select>
+  
+</mapper>
